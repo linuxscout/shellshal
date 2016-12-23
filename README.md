@@ -23,7 +23,7 @@ This project is a collection of small shell scripts used to process arabic texts
 
 ##SCRIPTS
 
-# Tokenize
+### Tokenize
 1- You can tokenize a text file by the following script
 ```
 tokenize.sh filename
@@ -32,7 +32,7 @@ tokenize.sh filename
 ```
 tokenize_uniq.sh filename
 ```
-# Tashkeel
+### Tashkeel
 1- Remove Harakat (diacritics) and Tatweel from text
 ```
 strip_tashkeel.sh filename
