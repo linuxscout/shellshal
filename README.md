@@ -24,7 +24,7 @@ This project is a collection of small shell scripts used to process arabic texts
 ##SCRIPTS
 
 ### Tokenize
-1- You can tokenize a text file by the following script, the result file is filename.unq
+1- You can tokenize a text file by the following script.
 ```
 tokenize.sh filename
 ```
@@ -33,7 +33,7 @@ tokenize.sh filename
 tr -s '[*!"#\$%&\(\)\+,\\\.\/:;،؛<=>\?@\[\\\\]^_`\{|\}~][:space:]]' '\n' < $1 
 ```
 
-2- Tokenize, sort, removre duplicates and count frequencies for words in file.
+2- Tokenize, sort, removre duplicates and count frequencies for words in file. The result file is filename.unq.
 ```
 tokenize_uniq.sh filename
 ```
