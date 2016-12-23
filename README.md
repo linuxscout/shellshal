@@ -9,6 +9,7 @@ This project is a collection of small shell scripts used to process arabic texts
 - Strip Tashkeel from text
 - Strip only the last mark from every word in text.
 
+
 #التسمية
 شَلْشَلَ
     [ ش ل ش ل ]. ( فعل : رباعي لازم متعد ). :- شَلْشَلْتُ ، أُشَلْشِلُ ، شَلْشِلْ ، مصدر شَلْشَلَةٌ .
