@@ -24,20 +24,41 @@ This project is a collection of small shell scripts used to process arabic texts
 ##SCRIPTS
 
 ### Tokenize
-1- You can tokenize a text file by the following script
+1- You can tokenize a text file by the following script, the result file is filename.unq
 ```
 tokenize.sh filename
 ```
+#### source
+```shell
+tr -s '[*!"#\$%&\(\)\+,\\\.\/:;،؛<=>\?@\[\\\\]^_`\{|\}~][:space:]]' '\n' < $1 
+```
+
 2- Tokenize, sort, removre duplicates and count frequencies for words in file.
 ```
 tokenize_uniq.sh filename
 ```
+#### source
+```shell
+tr -s '[*!"#\$%&\(\)\+,\\\.\/:;،؛<=>\?@\[\\\\]^_`\{|\}~][:space:]]' '\n' < $1 | sort | uniq -c | sort -nr >$1.unq
+```
+
 ### Tashkeel
 1- Remove Harakat (diacritics) and Tatweel from text
 ```
 strip_tashkeel.sh filename
 ```
+#### source
+```shell
+CHARS=$(python -c 'print u"\u064b\u064c\u064d\u064e\u064f\u0651\u0652".encode("utf8")')
+sed 's/['"$CHARS"']//g' < $1
+```
+
 2- Remove last Haraka (diacritic) from the end of words from text
 ```
-strip_lastmark.sh filename
+Strip_lastmark.sh filename
+```
+#### source
+```shell
+CHARS=$(python -c 'print u"\u064b\u064c\u064d\u064e\u064f\u0651\u0652".encode("utf8")')
+sed 's/['"$CHARS"']$//g' < $1
 ```
