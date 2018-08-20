@@ -1,0 +1,16 @@
+#!/bin/sh
+# shellshal  : Arabic shell command tools
+# Shell Script for Arabic Language processing
+#سكريبتات سطر الأوامر للتعامل مع النصوص العربية
+# github.com/linuxscout/shellshal
+# by Taha Zerrouki (taha.zerrouki @ gmail.com)
+
+echo "Chmmands"
+echo "1- strip tashkeel (diacritic) from words from text"
+echo "\tstrip_tashkeel.sh filename"
+echo "2- Remove last Haraka (diacritic) from the end of words from text"
+echo "   strip_lastmark.sh filename"
+echo "3- Tokenize words from text and return only sorted uniq words with frequency"
+echo "   okenize_uniq.sh filename"
+echo "4- Tokenize words from text and return only sorted uniq words with frequency"
+echo "  tokenize_uniq.sh filename"
