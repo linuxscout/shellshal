@@ -20,7 +20,14 @@ This project is a collection of small shell scripts used to process arabic texts
 الاسم مأخوذ من شبهه بكلمة shell التي تعني سطر الأوامر، 
 
 والمعنى في الشلشلة هي التتابع
-
+## Install
+```shell
+make install
+```
+## Test
+```shell
+make test
+```
 ##SCRIPTS
 
 ### Tokenize
