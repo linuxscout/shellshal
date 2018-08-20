@@ -12,6 +12,7 @@ all:
 
 install:
 	sudo cp shellshal/*.sh /usr/local/bin
+	sudo cp shellshal/shellshal /usr/local/bin
 
 publish:
 	git push origin master 
