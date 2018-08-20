@@ -37,7 +37,7 @@ tokenize.sh filename
 ```
 #### source
 ```shell
-tr -s '[*!"#\$%&\(\)\+,\\\.\/:;،؛<=>\?@\[\\\\]^_`\{|\}~][:space:]]' '\n' < $1 
+sed 's/[[:punct:][:space:]×،؛]/\n/g'  < $1 |sed '/^\s*$/d'
 ```
 
 2- Tokenize, sort, removre duplicates and count frequencies for words in file. The result file is filename.unq.
@@ -46,7 +46,7 @@ tokenize_uniq.sh filename
 ```
 #### source
 ```shell
-tr -s '[*!"#\$%&\(\)\+,\\\.\/:;،؛<=>\?@\[\\\\]^_`\{|\}~][:space:]]' '\n' < $1 | sort | uniq -c | sort -nr >$1.unq
+sed 's/[[:punct:][:space:]×،؛]/\n/g'  < $1 |sed '/^\s*$/d' | sort | uniq -c | sort -nr >$1.unq
 ```
 
 ### Tashkeel
