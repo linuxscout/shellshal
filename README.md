@@ -69,3 +69,14 @@ Strip_lastmark.sh filename
 CHARS=$(python -c 'print u"\u064b\u064c\u064d\u064e\u064f\u0651\u0652".encode("utf8")')
 sed 's/['"$CHARS"']$//g' < $1
 ```
+
+### Build lists and dictionary
+1-Makelist Convert file into list; csv file or one word per line
+
+```
+shellshal/makelist.sh testfile.csv
+```
+#### source
+```
+awk 'BEGIN{print "MyList=["};/^[^#]/{printf "u\"%s\",\n",$1};END{print "]"}' $1
+```

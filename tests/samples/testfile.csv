@@ -1,0 +1,20 @@
+#
+# Arabic roots list
+# By Taha Zerrouki
+# Resources : SARF and Alkhalil morphology system
+# License : GPL
+# Github: http://github.com/linuxscout/arabic-roots
+# Count : 7504
+#       Triliteral roots: 5674
+#       quadriliteral roots:1830
+# Format: all Hamzat are normalized into Hamza on line
+#
+
+ءبء
+ءبب
+ءبت
+ءبث
+ءبد
+ءبر
+ءبز
+ءبس

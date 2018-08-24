@@ -5,8 +5,8 @@
 # github.com/linuxscout/shellshal
 # by Taha Zerrouki (taha.zerrouki @ gmail.com)
 # template: generate a file for a new command
-#{NAME} {DESCRIPTION}
+# makelist Convert file into list; csv file or one word per line
 #Usage:
-#    {NAME} {OPTIONS}
+#    makelist 
 : ${1?"Usage: $0 FILENAME"}
-{COMMAND}
+awk 'BEGIN{print "MyList=["};/^[^#]/{printf "u\"%s\",\n",$1};END{print "]"}' $1

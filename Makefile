@@ -10,6 +10,8 @@ backup:
 #create all files 
 all: 
 
+create new template:
+	template/template.sh
 install:
 	sudo cp shellshal/*.sh /usr/local/bin
 	sudo cp shellshal/shellshal /usr/local/bin
@@ -29,3 +31,5 @@ test:
 	shellshal/tokenize.sh tests/samples/testfile.txt
 	echo " Tokenize words from text and return only sorted uniq words with frequency"
 	shellshal/tokenize_uniq.sh tests/samples/testfile.txt
+	echo "Makelist Convert file into list; csv file or one word per line"
+	shellshal/makelist.sh tests/samples/testfile.csv 
