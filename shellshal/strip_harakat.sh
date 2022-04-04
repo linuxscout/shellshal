@@ -5,10 +5,10 @@
 # github.com/linuxscout/shellshal
 # by Taha Zerrouki (taha.zerrouki @ gmail.com)
 # License: GPL
-# Tokenize all words in a file
+# Strip Harakat (diacritics but not Shadda) from all words in a file
 # Usage:
-# Tokenize words from text
-#   tokenize.sh filename
+# strip Harakat (diacritics but not Shadda) from words from text
+#   strip_harakat.sh filename
 : ${1?"Usage: $0 FILENAME"}
-#~ tr -cs '[*!"#\$%&\(\)\+,\\\.\/:;،؛<=>\?@\[\\\\]^_`\{|\}~][:space:]]' '\n' < $1 
-sed 's/[[:punct:][:space:]×،؛]/\n/g'  < $1 |sed '/^\s*$/d'
+CHARS=$(python -c 'print (u"\u064b\u064c\u064d\u064e\u064f\u0650\u0652\u0670".encode("utf8"))')
+sed 's/['"$CHARS"']//g' < $1
