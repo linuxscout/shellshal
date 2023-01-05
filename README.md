@@ -1,4 +1,4 @@
-# shellshal
+# Shellshal
 Shell Script for Arabic Language processing
 سكريبتات سطر الأوامر للتعامل مع النصوص العربية
 
