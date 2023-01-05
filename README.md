@@ -2,6 +2,7 @@
 Shell Script for Arabic Language processing
 سكريبتات سطر الأوامر للتعامل مع النصوص العربية
 
+![shellshel logo](logo.png  "shellshel logo")
 #Description
 This project is a collection of small shell scripts used to process arabic texts, like:
 
