@@ -7,7 +7,7 @@ Shell Scripts for Arabic Language processing
 ## Description
 This project is a collection of small shell scripts used to process arabic texts, like:
 
-- Tokeninze a file text into tokens
+- Tokenize a file text into tokens
 - Strip Tashkeel from text
 - Strip only the last mark from every word in text.
 
