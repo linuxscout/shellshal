@@ -15,6 +15,16 @@ create new template:
 install:
 	sudo cp shellshal/*.sh /usr/local/bin
 	sudo cp shellshal/shellshal /usr/local/bin
+	sudo chmod uo=rx /usr/local/bin/makelist.sh
+	sudo chmod uo=rx /usr/local/bin/replace_wasla.sh
+	sudo chmod uo=rx /usr/local/bin/shellshal
+	sudo chmod uo=rx /usr/local/bin/strip_harakat.sh
+	sudo chmod uo=rx /usr/local/bin/strip_lastmark.sh
+	sudo chmod uo=rx /usr/local/bin/strip_tashkeel.sh
+	sudo chmod uo=rx /usr/local/bin/tokenize.sh
+	sudo chmod uo=rx /usr/local/bin/tokenize_uniq.sh
+
+
 
 publish:
 	git push origin master 

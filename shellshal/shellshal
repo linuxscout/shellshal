@@ -5,12 +5,18 @@
 # github.com/linuxscout/shellshal
 # by Taha Zerrouki (taha.zerrouki @ gmail.com)
 
-echo "Chmmands"
+echo "Commands"
 echo "1- strip tashkeel (diacritic) from words from text"
 echo "\tstrip_tashkeel.sh filename"
-echo "2- Remove last Haraka (diacritic) from the end of words from text"
+echo "2- strip Harakat (diacritic but not shadda) from words from text"
+echo "\tstrip_harakat.sh filename"
+echo "3- Remove last Haraka (diacritic) from the end of words from text"
 echo "   strip_lastmark.sh filename"
-echo "3- Tokenize words from text and return only sorted uniq words with frequency"
-echo "   okenize_uniq.sh filename"
-echo "4- Tokenize words from text and return only sorted uniq words with frequency"
+echo "4- Tokenize words from text"
+echo "   okenize.sh filename"
+echo "5- Tokenize words from text and return only sorted uniq words with frequency"
 echo "  tokenize_uniq.sh filename"
+echo "6- Replace Alef wasla to simple alef in  words from text"
+echo "   replace_wasla.sh filename"
+echo "7- Convert file into list; csv file or one word per line"
+echo "   makelist filename"
