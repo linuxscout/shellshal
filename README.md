@@ -1,5 +1,5 @@
 # Shellshal
-Shell Script for Arabic Language processing
+Shell Scripts for Arabic Language processing
 سكريبتات سطر الأوامر للتعامل مع النصوص العربية
 
 ![shellshel logo](logo.png  "shellshel logo")
