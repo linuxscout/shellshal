@@ -4,7 +4,7 @@ Shell Script for Arabic Language processing
 
 ![shellshel logo](logo.png  "shellshel logo")
 
-#Description
+## Description
 This project is a collection of small shell scripts used to process arabic texts, like:
 
 - Tokeninze a file text into tokens
